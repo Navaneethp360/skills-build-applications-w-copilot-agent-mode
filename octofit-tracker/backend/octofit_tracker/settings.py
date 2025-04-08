@@ -19,7 +19,7 @@ SECRET_KEY = 'django-insecure-25rsll_s*6ml5lv4l$51z6x!y5u_k!11f!hf^1&%q!$syk=ja3
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', f"{CODESPACE_NAME}-8000.app.github.dev"]
 
 # Add CODESPACE_NAME for dynamic URL generation
 CODESPACE_NAME = os.getenv('CODESPACE_NAME', 'default-codespace')
